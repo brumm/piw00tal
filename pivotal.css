@@ -1,5 +1,11 @@
+
+/*
+pivotal.css
+brumm.github.com
+*/
+
 body {
-   font-family: "Helvetica" !important;
+  font-family: "Helvetica" !important;
 }
 
 #header, 
@@ -10,242 +16,247 @@ body {
 #velocity, 
 li.ellipsify span, 
 #buttonPanel > li {
-   display: none !important;
+  display: none !important;
 }
 
 @media screen and (max-width: 355px) {
-   #controlPanel {
-      display: none;
-   }
+  #controlPanel {
+   display: none;
+}
 }
 
 body, #controlPanel, .panel {
-   min-width: 0 !important;
+  min-width: 0 !important;
 }
 
 #controls_search_velocity_row {
-  padding: 2px 10px !important;
+   padding: 2px 10px !important;
 }
 
 #controlPanel {
-  margin-bottom: 0 !important;
-  height: auto !important;
-  background: none !important;
+   margin-bottom: 0 !important;
+   height: auto !important;
+   background: none !important;
 }
 
 #project_tabs ul {
-  width: 150px !important;
-  margin-left: 100px !important;
-  position: absolute !important;
-  top: 5px !important;
+   width: 150px !important;
+   margin-left: 100px !important;
+   position: absolute !important;
+   top: 5px !important;
 }
 
 #project_tabs a, 
 .current span {
-  color: #999 !important;
-  text-shadow: none !important;
-  font-weight: normal !important;
+   color: #999 !important;
+   text-shadow: none !important;
 }
 
 #project_tabs ul li.current { background: none !important; }
 #project_tabs ul li.ellipsify { max-width: 0 !important; margin: 0 !important; }
 
 #project_tabs ul li {
-  float: none !important;
+   float: none !important;
 }
 
 #panelList {
-  width: 100px !important;
-  height: 22px !important;
-  overflow: hidden !important;
-  border: none !important;
+   width: 100px !important;
+   height: 22px !important;
+   overflow: hidden !important;
+   border: none !important;
 }
 
 #panelList:hover,
 #project_tabs ul:hover {
-  height: auto !important;
-  position: absolute !important;
-  overflow: visible !important;
-  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.7) !important;
-  border: 1px solid #777 !important;
-  border-radius: 5px !important;
-  background-color: #fff !important;
-  z-index: 1 !important;
+   height: auto !important;
+   position: absolute !important;
+   overflow: visible !important;
+   box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.7) !important;
+   border: 1px solid #777 !important;
+   border-radius: 5px !important;
+   background-color: #fff !important;
+   z-index: 1 !important;
 }
 
 #panelList > li {
-  float: none !important;
-  margin-right: 0 !important;
+   float: none !important;
+   margin-right: 0 !important;
 }
 
 table, .layout {
-   border-spacing: 0 !important;
+  border-spacing: 0 !important;
 }
 
 .panel:not(:last-child) {
-   border-right: 1px solid #A7B2C5 !important;
+  border-right: 1px solid #A7B2C5 !important;
 }
 
 .panel:not(:first-child) {
-   border-left: 1px solid #EFF1F4 !important;
+  border-left: 1px solid #EFF1F4 !important;
 }
 
 .panelHeader, .panelHeaderLeft, .panelHeaderRight {
-   background: -moz-linear-gradient(#EFF1F4, #D2D6DC) !important;
-   background: -webkit-linear-gradient(#EFF1F4, #D2D6DC) !important;
-   box-shadow: 0 1px rgba(255, 255, 255, 0.5) inset !important;
-   color: #333 !important;
-   border-top: 1px solid #D0D4DA !important;
-   border-bottom: 1px solid #A7B2C5 !important;
-   -webkit-user-select: none;
-   border-radius: 0 !important;
-   margin: 0 !important;
-   color: #929CAF;
-   text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(#EFF1F4, #D2D6DC) !important;
+  background: -webkit-linear-gradient(#EFF1F4, #D2D6DC) !important;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.5) inset !important;
+  color: #333 !important;
+  border-top: 1px solid #D0D4DA !important;
+  border-bottom: 1px solid #A7B2C5 !important;
+  -webkit-user-select: none;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  color: #929CAF;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
 
 .panelTitle { top: 6px !important; }
 
 .items {
-   padding-right: 0 !important;
+  padding-right: 0 !important;
+  background: none;
 }
-.list {
+
+.items > div.inner {
    background: none !important;
-   padding-left: 0 !important;
+}
+
+.list {
+  background: none !important;
+  padding-left: 0 !important;
 }
 .item > .storyItem {
-   padding: 4px 0 !important;
-   background: none !important;
-   border: none !important;
+  padding: 4px 0 !important;
+  background: none !important;
+  border: none !important;
 }
 .item:nth-child(even) .storyItem {
-   background: #EFF1F4 !important;
+  background: #EFF1F4 !important;
 }
 
 .unscheduled, .started, .unstarted, .delivered, .accepted, .finished {
-   background-color: white !important;
-   border: none !important;
+  background-color: white !important;
+  border: none !important;
 }
 
 .storyLabels {
-   display: none !important;
+  display: none !important;
 }
 
 .div.inner, .storyDetails {
-   background: none !important;
+  background: none !important;
 }
 
 .storyPreviewText {
-   cursor: default !important;
-   max-width: 65% !important;
+  cursor: default !important;
+  max-width: 65% !important;
 }
 .storyPreviewHeader {
-   position: relative !important;
-   background: none !important;
+  position: relative !important;
+  background: none !important;
 }
 
 .storyPreviewButtons {
-   position: absolute !important;
-   top: 50% !important;
-   margin-top: -8px !important;
-   right: 10px !important;
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -8px !important;
+  right: 10px !important;
 }
 
 .storyPreviewButtons > a {
-   text-indent: -999999px !important;
-   background: none !important;
-   padding: 0 !important;
-   margin: 0 !important;
-   width: 16px !important;
-   height: 16px !important;
-   border-radius: 300px !important;
-   margin-left: 10px !important;
-   position: relative !important;
+  text-indent: -999999px !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 300px !important;
+  margin-left: 10px !important;
+  position: relative !important;
 }
 
 .storyPreviewButtons > a:after {
-   display: inline-block !important;
-   position: absolute !important;
-   top: 0 !important;
-   left: 0 !important;
-   width: 16px !important;
-   height: 16px !important;
-   text-indent: 0px !important;
-   text-align: center !important;
-   line-height: 16px !important;
-   font-size: 10px !important;
-   font-weight: normal !important;
+  display: inline-block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+  text-indent: 0px !important;
+  text-align: center !important;
+  line-height: 16px !important;
+  font-size: 10px !important;
+  font-weight: normal !important;
 }
 
 .storyPreviewButtons > a.accept:after {
-   content: "\2713";
+  content: "\2714";
 }
 .storyPreviewButtons > a.restart:after {
-   content: "\2022";
-   font-size: 22px !important;
+  content: "\2022";
+  font-size: 22px !important;
 }
 .storyPreviewButtons > a.reject:after {
-   content: "\2717";
+  content: "\2716";
 }
 .storyPreviewButtons > a.finish:after {
-   content: "\272D";
+  content: "\272D";
+  line-height: 15px !important;
 }
 .storyPreviewButtons > a.deliver:after {
-   content: "\279C";
+  content: "\279C";
 }
 .storyPreviewButtons > a.start:after {
-   content: "\25B6";
-   text-indent: 2px !important;
-   line-height: 17px !important;
+  content: "\25B6";
+  text-indent: 2px !important;
+  line-height: 17px !important;
 }
 
 a.accept {
-   background-color: #6b9a13 !important;
-   box-shadow: 0 0 0 1px #416f00,
-          0 0 0 1px #83b21a inset;
+  background-color: #6b9a13 !important;
+  box-shadow: 0 0 0 1px #416f00,
+  0 0 0 1px #83b21a inset;
 }
 
 a.restart {
-   background-color: #e0e2e5 !important;
-   box-shadow: 0 0 0 1px #bbc4cc,
-          0 0 0 1px #f0f1f2 inset;
+  background-color: #e0e2e5 !important;
+  box-shadow: 0 0 0 1px #bbc4cc,
+  0 0 0 1px #f0f1f2 inset;
   color: #a5243e !important;
 }
 
 a.reject {
-   background-color: #a5243e !important;
-   box-shadow: 0 0 0 1px #821328,
-          0 0 0 1px #c23456 inset;
+  background-color: #a5243e !important;
+  box-shadow: 0 0 0 1px #821328,
+  0 0 0 1px #c23456 inset;
 }
 
 a.finish {
-   background-color: #2b4c74 !important;
-   box-shadow: 0 0 0 1px #24364c,
-          0 0 0 1px #416e9b inset;
+  background-color: #2b4c74 !important;
+  box-shadow: 0 0 0 1px #24364c,
+  0 0 0 1px #416e9b inset;
 }
 
 a.deliver {
-   background-color: #ef9113 !important;
-   box-shadow: 0 0 0 1px #cd6e00,
-          0 0 0 1px #f6af1c inset;
+  background-color: #ef9113 !important;
+  box-shadow: 0 0 0 1px #cd6e00,
+  0 0 0 1px #f6af1c inset;
 }
 
 a.start {
-   background-color: #e0e2e5 !important;
-   box-shadow: 0 0 0 1px #bbc4cc,
-          0 0 0 1px #f0f1f2 inset;
+  background-color: #e0e2e5 !important;
+  box-shadow: 0 0 0 1px #bbc4cc,
+  0 0 0 1px #f0f1f2 inset;
 }
 
-
-
 ::-webkit-scrollbar {
-   width: 5px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-   background-color: white !important;
+  background-color: white !important;
 }
 
 ::-webkit-scrollbar-thumb {
-   background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
