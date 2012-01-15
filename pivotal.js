@@ -11,7 +11,7 @@
   // trigger once
   $("#project_name_row ul li.current").click();
 
-  // set up panel menu items
+  // set up dock menu items
   ["Current", "Backlog", "Icebox", "Done", "My Work"].each(function(panel) {
     fluid.addDockMenuItem(panel, function() {
       app.layout.togglePanel(Panel[panel.toUpperCase().replace(" ", "_")]);
@@ -20,7 +20,7 @@
 
   // update dock badge
   setInterval(function() {
-    fluid.dockBadge = $("#mywork .unstarted").length;
+    fluid.dockBadge = $("#mywork .unstarted").length || null;
   }, 2000);
 
   // fluid.showGrowlNotification({
