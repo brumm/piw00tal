@@ -1,7 +1,7 @@
 
 /*
-pivotal.css
-brumm.github.com
+  pivotal.css
+  brumm.github.com
 */
 
 body {
@@ -19,11 +19,11 @@ li.ellipsify span,
   display: none !important;
 }
 
-@media screen and (max-width: 355px) {
+/*@media screen and (max-width: 355px) {
   #controlPanel {
    display: none;
-}
-}
+  }
+}*/
 
 body, #controlPanel, .panel {
   min-width: 0 !important;
