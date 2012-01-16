@@ -113,7 +113,7 @@ table, .layout {
 
 .items {
   padding-right: 0 !important;
-  background: none;
+  background: none !important;
 }
 
 .items > div.inner {
