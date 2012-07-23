@@ -95,7 +95,10 @@ table, .layout {
   border-left: 1px solid #EFF1F4 !important;
 }
 
-.panelHeader, .panelHeaderLeft, .panelHeaderRight {
+.panelHeaderLeft, .panelHeaderRight {
+  display: none;
+}
+.panelHeader {
   background: -moz-linear-gradient(#EFF1F4, #D2D6DC) !important;
   background: -webkit-linear-gradient(#EFF1F4, #D2D6DC) !important;
   box-shadow: 0 1px rgba(255, 255, 255, 0.5) inset !important;
@@ -105,6 +108,7 @@ table, .layout {
   -webkit-user-select: none;
   border-radius: 0 !important;
   margin: 0 !important;
+  padding: 0 5px !important;
   color: #929CAF;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
 }
@@ -124,11 +128,39 @@ table, .layout {
   background: none !important;
   padding-left: 0 !important;
 }
+
+.item.drop_target {
+  border-color: #B6CDF6 !important;
+  border-top-width: 3px !important;
+  margin-top: -3px !important;
+  position: relative;
+}
+.item.drop_target:after,
+.item.drop_target:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border: 3px solid #B6CDF6;
+  border-radius: 100px;
+  width: 7px;
+  height: 7px;
+  top: -8px;
+  z-index: 99;
+}
+.item.drop_target:after {
+  right: -5px;
+}
+.item.drop_target:before {
+  left: -5px;
+}
+
 .item > .storyItem {
   padding: 4px 0 !important;
   background: none !important;
   border: none !important;
 }
+
 .item:nth-child(even) .storyItem {
   background: #EFF1F4 !important;
 }
@@ -257,6 +289,6 @@ a.start {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
 }
